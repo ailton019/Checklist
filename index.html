@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checklist Diário</title>
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <link rel="shortcut icon" href="./src/img/lista-de-tarefas.png" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <h1>Checklist Diário 📝</h1>
+    <div class="input-group">
+      <input type="text" id="task-input" placeholder="Digite sua tarefa..." />
+      <button onclick="addTask()">Adicionar</button>
+    </div>
+    <ul id="task-list"></ul>
+  </div>
+  <div class="whatsapp-config">
+  <input type="text" id="whatsapp-number" placeholder="Seu número com DDD (ex: 11999999999)" />
+  <button onclick="sendTasksToWhatsApp()">Enviar para o WhatsApp</button>
+</div>
+
