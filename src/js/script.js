@@ -58,6 +58,7 @@ function saveTasks() {
   });
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
+
 function sendTasksToWhatsApp() {
   const numberInput = document.getElementById("whatsapp-number");
   const number = numberInput.value.trim();
@@ -67,7 +68,6 @@ function sendTasksToWhatsApp() {
     return;
   }
 
-  // Salvar o número no localStorage
   localStorage.setItem("whatsappNumber", number);
 
   const tasks = [];
@@ -82,7 +82,6 @@ function sendTasksToWhatsApp() {
     return;
   }
 
-  // Pegar data/hora atual
   const now = new Date();
   const dateStr = now.toLocaleDateString("pt-BR");
   const timeStr = now.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" });
